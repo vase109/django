@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+
+{% block 'content' %}
+
+        <ol>
+            {% for i in food %}
+                <li><a href="{% url 'food_detail' i.id %}">{{i.name}}</li></a>
+            {% endfor %}
+        </ol>
+
+{% endblock 'content' %}

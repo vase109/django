@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block 'content' %}
+    <ol>
+        <li>{{detail.name}}</li>
+        <li>{{detail.text}}</li>
+        <li>{{detail.created}}</li>
+        <img src="{{i.photo.url}}" alt="food">
+    </ol>
+{% endblock 'content' %}
